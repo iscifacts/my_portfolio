@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <div class="user">
+            <img src="photo_6091319393570110003_y.jpg" alt="">
+            <h3 class="name">Ishita Agrawal</h3>
+            <p class="post">Data Scientist</p>
+
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="White and Orange Simple Portfolio Presentation.mp4"  target="blank">About Me</a></li>
+                <li><a href="https://leetcode.com/ishita_agrawal/" target="_blank">Leetcode</a></li>
+                <li><a href="https://github.com/iscifacts" target="_blank">Github</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/users/ishitaagrawal-8432/" target="_blank">Microsoft Learn</a></li>
+                <li><a href="">My Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <section class="home" id="home">
+              <h3>Hi there...</h3>
+              <h3 class="name">My name is <span>Ishita agrawal</span></h3>
+              <h3 class="post">I am an <span class="typing-text">Aspiring Data Scientist</span></h3>
+              <a href="#"><button class="btn">Hire me</button></a>
+              <div class="share">
+               
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/ishitaagrawal0104/" class="fab fa-linkedin"></a>
+              </div>
+
+            </section>
+        </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+
+    var type = new Typed('.typing-text',{
+        strings : [ 'Web designer', 'Front end developer', 'Graphic designer', ],
+        typeSpeed: 120,
+        loop:true
+    });
+
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+</script>
+
+</body>
+</html>
